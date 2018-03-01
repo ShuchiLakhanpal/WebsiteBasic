@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>WebsiteHTML5</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon-32x32.png" type="image/x-icon" width="1em" height="1em">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/menuList.css" rel="stylesheet" />
+	<link href="css/mobile.css" rel="stylesheet" />
+	<link href="css/navbar.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/navbar.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+	<div id="wrapper mainPage">
+		<button type="button" class="menu-btn navbar-toggle" onclick="toggleMenu();">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+		<header>
+			<nav id="mainNav" class="closed" role='navigation'>
+				<ul>
+					<li><a href="homePage.html"><i class="#"></i> Home</a></li>
+					<li><a href="ourStory.html"><i class="#"></i> Our Story</a></li>
+					<li><a href="menuList.html"> Menu List</a>
+						<ul class="sub-menu">
+							<li><a href="menuList.html"> Salad</a>
+								<ul class="sub-sub-menu">
+									<li><a href="menuList.html">Ceasar</a></li>
+									<li><a href="menuList.html">Garden</a></li>
+								</ul>
+							</li>
+							<li><a href="menuList.html"><i class="icon-pencil"></i> Apetizer</a>
+								<ul class="sub-sub-menu">
+									<li><a href="menuList.html">Guacamole</a></li>
+									<li><a href="menuList.html">Spinach Brownies</a></li>
+									<li><a href="menuList.html">Bruschetta</a></li>
+								</ul>
+							</li>
+							<li><a href="menuList.html"><i class="icon-camera"></i> Desserts</a>
+								<ul class="sub-sub-menu">
+									<li><a href="menuList.html">Gelato</a></li>
+									<li><a href="menuList.html">7 Layered Cake</a></li>
+									<li><a href="menuList.html">Icecream</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="reservation.html"><i class="#"></i> Reservation</a>
+						<ul class="sub-menu">
+							<li><a href="reservation.html"><i class="#"></i> Patio</a></li>
+							<li><a href="reservation.html"><i class="#"></i> Indoor</a></li>
+						</ul>
+					</li>
+					<li><a href="logIn.html"><i class="#"></i> Log In</a></li>
+				</ul>
+				<a id="close" onclick="toggleMenu();">X</a>
+			</nav>
+			<section class="navbar navbar-inverse navbar-fixed-top headId myNav navbar-header">
+				<a href="homePage.html"><img src="images/final_draft_logo_transparent.png" alt="logo" class="logoImg"></a>
+			</section>
+
+			<nav id="desktop" class="navbar navbar-inverse navbar-fixed-top headId myNav">
+				<section class="container-fluid">
+					<section class="navbar-header">
+						<a href="#"><img src="images/final_draft_logo_transparent.png" alt="logo" class="logoImg"></a>
+					</section>
+					<ul class="nav navbar-nav navList" id="navList">
+						<li><a href="homePage.html">Home</a></li>
+						<li><a href="ourStory.html">Our Story</a></li>
+						<li><a class="current" href="menuList.html">Menu List<img src="images/arrowD.png" alt="arrow" class="arrow"></a>
+							<ul class="menuItem">
+								<li><a href="menuList.html">Salad<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+									<ul class="subMenuItem">
+										<li><a href="menuList.html">Caesar</a></li>
+										<li><a href="menuList.html">Garden</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="menuItem">
+								<li><a href="menuList.html">Apetizer<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+									<ul class="subMenuItem">
+										<li><a href="menuList.html">Guacamole</a></li>
+										<li><a href="menuList.html">Spinach Brownies</a></li>
+										<li><a href="menuList.html">Bruschetta</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="menuItem">
+								<li><a href="menuList.html">Desserts<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+									<ul class="subMenuItem">
+										<li><a href="menuList.html">Gelato</a></li>
+										<li><a href="menuList.html">7 Layered Cake</a></li>
+										<li><a href="menuList.html">Icecream</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="reservation.html">Reservation<img src="images/arrowD.png" alt="arrow" class="arrow"></a>
+							<ul class="subMenuReserve">
+								<li><a href="reservation.html">Patio</a>
+								</li>
+								<li><a href="reservation.html">Indoor</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="logIn.html">Log In</a></li>
+					</ul>
+				</section>
+			</nav>
+		</header>
+
+  
+<section class="myCarousel">
+  <section class="row  myRow center-block" >
+      <section class="col-sm-8 alignImg">
+             <section id="myCarousel" class="carousel slide " data-ride="carousel" >
+                        <ol class="carousel-indicators">
+                            <li data-target="myCarousel" data-slide-to="0"></li>
+                            <li data-target="myCarousel" data-slide-to="1"></li>
+                            <li data-target="myCarousel" data-slide-to="2"></li>
+                            <li data-target="myCarousel" data-slide-to="3"></li>
+                            <li data-target="myCarousel" data-slide-to="4"></li>
+                            <li data-target="myCarousel" data-slide-to="5"></li>
+                            <li data-target="myCarousel" data-slide-to="6"></li>
+                            <li data-target="myCarousel" data-slide-to="7"></li>
+                            <li data-target="myCarousel" data-slide-to="8"></li>
+                            <li data-target="myCarousel" data-slide-to="9"></li>
+                        </ol>
+                        <!--Slides section-->
+ <!--                        <section> -->
+                            <section class="carousel-inner dimension ">
+                                <section class="item active ">
+                                    <img src="images/egg.jpg" alt="Plating" class="ImgCarousel">
+                                </section>
+                                <section class="item  ">
+                                    <img src="images/eggPlating.jpg" alt="Plating" class="ImgCarousel"/>
+                                </section>
+                                <section class="item  ">
+                                    <img src="images/baking.jpg" alt="Plating" class="ImgCarousel"/>
+                                </section>
+                                 <section class="item  ">
+                                    <img src="images/dessertPlating.jpg" alt="Plating" class="ImgCarousel"/>
+                                </section>
+                                 <section class="item  ">
+                                    <img src="images/foodPlating.jpg" alt="Plating" class="ImgCarousel"/>
+                                </section>
+                                 <section class="item  ">
+                                    <img src="images/greenOnion.jpg" alt="Plating" class="ImgCarousel"/>
+                                </section>
+                                 <section class="item  ">
+                                 <img src="images/foodPlatting.jpg" alt="Plating" class="ImgCarousel"/>
+                                </section>
+                                 <section class="item  ">
+                                    <img src="images/lavaCake.jpg" alt="Sweet" class="ImgCarousel"/>
+                                </section>
+                                 <section class="item  ">
+                                    <img src="images/foodPlatting1.jpg" alt="Plating" class="ImgCarousel"/>
+                                </section>
+                                <section class="item  ">
+                                    <img src="images/dessertPlating1.jpg" alt="dessert" class="ImgCarousel">
+                                </section>
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                     <span class="glyphicon glyphicon-chevron-right"></span>
+                                     <span class="sr-only">Next</span>
+                                </a>
+                     </section> <!--End Slides section-->
+<!--                  </section>         
+ -->         </section>
+    </section>
+</section>
+<section class="textCarousel row center-block">
+    <section class="row">
+        <section class="col-md-9 center-block  listMenu" >
+            <h1 id="menutxt">Menu</h1>
+			    <p class="menu-content center-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
+       </section>
+    </section>
+</section>
+<section class="row center-block">
+
+<section class="col-md-9 center-block listMenu" ><p id="thisTxt">
+   <a id="showall">Show All</a>
+   <a class="showSingle" target="1">Apetizer</a>
+   <a class="showSingle" target="2">Salad</a>
+   <a class="showSingle" target="3">Dessert</a>
+    </p><p></p></section>
+</section>
+<section class="row center-block">
+<section class="cnt col-md-9 center-block listMenu" >
+    <div id="div1" class="targetDiv row center-block">
+        <div id="div11-inner" class="targetDiv1 col-md-4 col-sm-4 center-block">Apetizer</div>
+        <div id="div12-inner" class="targetDiv1 col-md-4 col-sm-4 center-block">Apetizer</div>
+    </div>
+    <div id="div2" class="targetDiv row center-block">
+        <div id="div21-inner-a" class="targetDiv2 col-md-4 col-sm-4 center-block">Salad</div>
+        <div id="div22-inner-a" class="targetDiv2 col-md-4 col-sm-4 center-block">Salad</div>
+        <!-- <div id="div23-inner-a" class="targetDiv2">Salad</div>
+        <div id="div24-inner-a" class="targetDiv2">Salad</div> -->        
+    </div>
+    <div id="div3" class="targetDiv row center-block">
+        <div id="div31-inner-b" class="targetDiv3 col-md-4 col-sm-4 center-block">Dessert</div>
+        <div id="div32-inner-b" class="targetDiv3 col-md-4 col-sm-4 center-block">Dessert</div>
+        <!-- <div id="div33-inner-b" class="targetDiv3">Dessert</div>
+        <div id="div34-inner-b" class="targetDiv3">Dessert</div>
+        <div id="div35-inner-b" class="targetDiv3">Dessert</div>
+        <div id="div36-inner-b" class="targetDiv3">Dessert</div> -->
+    </div>
+</section>
+</section>
+	</div>
+	<footer>
+		<ul class="social" style="margin-bottom: 0;">
+			<li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="icons"/><i class="fa fa-facebook" id="facebook"></i></a></li>
+			<li><a href="https://plus.google.com" target="_blank"><img src="images/gPlus.png" class="iconsGPlus"/><i class="fa fa-google-plus" id="google-plus"></i></a></li>
+			<li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" id="twitter"><img src="images/twitter.png" class="iconsTwitter"/></i></a></li>
+		</ul>
+		<h6>@bonapetit 2017</h6>
+	</footer>
+</body>
+</html>

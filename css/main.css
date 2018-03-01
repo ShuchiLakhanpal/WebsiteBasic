@@ -1,0 +1,459 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body, html
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.wrapper
+{
+	/*max-width: 992px;*/
+	margin-right: auto;
+	margin-left: auto;
+	max-height: 100%;
+}
+/*----------header------------*/
+.logoImg
+{
+	width: 3.52em;
+	height: 3.52em;
+	padding-right: 0;
+}
+
+.container-fluid
+{/*
+	height: 500px;*/
+	padding:0;
+	
+}
+
+.myNav
+{
+	background-color: rgba(0,0,0,0.56);
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	border: none;
+	color: black;
+	/*z-index: 999;*/
+	position: fixed;
+}
+
+
+ .myNav .navList li a{
+	/*color: #131212;*/
+	color: orange;
+	font-size: 1.20em;
+	width: 5.55em;
+	height: 2.45em;
+	text-align: center;
+	font-family: initial;
+	/*z-index: 999;*/
+	box-sizing: border-box;
+
+ }
+
+.myNav .navList
+{
+	
+	list-style: none;
+	text-decoration: none;
+	float: right;
+	font-size: 1.25em;
+	/*background-color: rgba(222, 116, 41, 0.33);*/
+	color: white;
+	
+	
+}
+
+.myNav.navList li:active
+{
+	text-decoration: none;
+	background-color: rgba(0, 159, 138, 0.89);
+	color: #337ab7;
+}
+
+.navList .current
+{
+	background-color: green;
+	color: black;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover
+{
+	background-color: #d2beb3;
+	color:white;
+
+}
+ /*.navbar-inverse .navbar-nav>li>a:visited
+ {
+ 	text-decoration: none;
+	background-color: rgba(0, 159, 138, 0.89);
+	color: #337ab7;
+ }*/
+
+
+
+.navbar
+{
+	margin-bottom: 0;
+	border-radius: 0;
+	border:0;
+
+}
+
+button.navbar-toggle,button.navbar-inverse button.navbar-toggle:focus, button.navbar-inverse button.navbar-toggle:hover
+{
+	background-color: red;
+}
+
+.collapse.in 
+{
+    max-height: 500px;
+    /*background-color: rgba(222, 116, 41, 0.33);*/
+}
+
+/*.myNav.navList>li a
+{
+	color: black;
+}
+*/
+.navList li 
+{
+ /*display: block;*/
+ list-style: none;
+ text-decoration: none;
+ position: relative;
+
+}
+
+.navList li a
+{
+ display: block;
+ list-style: none;
+ text-decoration: none;
+}
+
+.nav>li>a
+{
+	padding: 0;
+	padding-top: 0.5em;
+}
+
+.navList li:hover 
+{
+ background-color: rgba(115, 111, 102, 0.51);;
+/*position: absolute;*/
+}
+
+.navList  .subMenuReserve  
+{
+ display: none;
+ list-style: none;
+ text-decoration: none;
+ background-color: rgba(115, 111, 102, 0.51);
+}
+
+.navList  .menuItem 
+{
+ display: none;
+ list-style: none;
+ text-decoration: none;
+ /*position: fixed;*/
+}
+
+.navList li:hover> .menuItem 
+{
+ display: block;
+ list-style: none;
+ text-decoration: none;
+}
+
+.navList  .menuItem .subMenuItem
+{
+ display: none;
+ list-style: none;
+ text-decoration: none;
+ position: fixed;
+ background-color: rgba(115, 111, 102, 0.51);
+}
+
+.navList  .menuItem>li:hover .subMenuItem
+{
+ display: block;
+ list-style: none;
+ text-decoration: none;
+ margin-left: 6.45em; 
+ position: fixed;
+ background-color: rgba(115, 111, 102, 0.51);
+ margin-top: -50px;
+
+}
+ .navList .menuItem>li>a:hover
+ {
+ 	color: blue;
+ 	background-color: rgba(15, 111, 102, 0.51);
+ }
+
+ .navList .menuItem>li .subMenuItem>li>a:hover
+ {
+ 	color: brown;
+ 	background-color: rgba(215, 111, 102, 0.51);
+ }
+
+ .navList .subMenuReserve>li>a:hover
+ {
+ 	color: brown;
+ 	background-color: rgba(0, 111, 102, 0.51);
+ } 
+
+.navList li:hover> .subMenuReserve   
+{
+ display: block;
+ list-style: none;
+ text-decoration: none;
+ background-color: rgba(115, 111, 102, 0.51);
+
+}
+
+.arrow
+{
+	width: 16px;
+	height: 16px;
+}
+
+.arrowR
+{
+	width: 16px;
+	height: 16px;
+}
+
+
+
+/*------------------------end of header------*/
+
+/*---------------scrolling effect home---------*/
+
+.sectionOne
+{
+	background-image: url("../images/restauration.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 61em;
+	width: 100%;
+	background-size: 100% 100%;
+}
+
+.sectionTwo
+{
+	background-image: url("../images/patio.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 51em;
+	width:100%; 
+}
+
+.sectionThree
+{
+   background-image: url("../images/icecream.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45em;
+	width: 100%;
+}
+
+.fluid-ratio-resize { 
+	max-width: 100%; /* actual img width */
+	*height: 150px; /* actual img height - IE7 */
+	/*background-image: url("../images/icecream.png");*/
+	background-size: cover;
+	background-position: center;
+}
+.fluid-ratio-resize:after {
+	content: " ";
+	display: block; 
+	width: 100%; 
+	padding-top: 4.918%; /* slope */
+	height: 102.786px; /* start height */
+}
+
+.parallax
+{
+	background-attachment: fixed;
+}
+
+.imgParallax
+{
+	width: 10em;
+	height: 20em,
+}
+
+.sectImg{
+	background-image: url("../images/desert.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 28em;
+	width: 40em;
+	float: right;
+}
+
+.sectImgFood{
+	background-image: url("../images/fruits.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 28em;
+	width: 40em;
+	float: right;
+}
+.sectImgLast{
+	background-image: url("../images/Sweet-Potato-Casserole-Bites.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 28em;
+	width: 45em;
+	float: right;
+	border: none;
+}
+
+.sectText
+{
+	height: 28em;
+	display: flex;
+}
+
+.sectText p
+{
+	font-size: x-large;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 900;
+    color: darkblue;
+    width: 24em;
+}
+
+.sectTextMid
+{
+	display: flex;
+}
+
+.sectTextMid-inner
+{
+	background-image: url("../images/fine-dining-table.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 28em;
+	width: 45%;
+}
+
+.sectTextMid p
+{
+	font-size: x-large;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 600;
+    color: brown;
+}
+
+.sectImgMid
+{
+	background-image: url("../images/seatingC.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 28em;
+	width: 45%;
+}
+/*-------footer------*/
+
+footer
+{
+	background-color: rgba(0,0,0,0.81);
+	height: 46px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	border: none;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	position: fixed;
+	bottom: 0px;
+	display: block;
+}
+
+footer h3{
+	margin-top: 0;
+}
+
+.social ul
+{
+	margin-bottom: 0;
+}
+
+/*-------social icons---------*/
+
+.social li
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+/*	width: 5.0%;
+*/	float: left;
+}
+
+.social i{
+	color: white;
+	font-size: 190%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	padding:4%;
+	opacity: .8;
+	box-sizing: border-box;
+}
+
+.social i:hover{
+	opacity: 1;
+}
+
+
+.icons{
+	width: 3em;
+	height: 3.4em;
+	padding-top: 0.41em;
+}
+
+.iconsGPlus
+{
+	width: 4em;
+	height: 3.75em;
+	/*padding-bottom: 5.97em;*/
+}
+
+.iconsTwitter
+{
+	width: 1em;
+	/*height: 4.55em;*/
+	/*padding-bottom: 2.97em;*/
+	padding-top: 0.5em;
+}
+/*------media queries-----*/
+
+/*@media screen and (max-width: 49.875em) and (min-width: 40.625em)
+{
+
+.sectText p
+{
+	width: 32em;
+}
+
+.sectionThree {
+    background-image: url(../images/ourStory.png);
+    }
+
+}*/
+

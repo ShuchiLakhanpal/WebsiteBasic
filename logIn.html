@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>WebsiteHTML5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon" width="1em" height="1em">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="css/main.css" rel="stylesheet" />
+  <!-- <link href="css/mobile.css" rel="stylesheet" /> -->
+  <link href="css/navbar.css" rel="stylesheet" />
+  <link href="css/logIn.css" rel="stylesheet" />
+  <link href="css/mobile.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <!--  <script type="text/javascript" src="js/navbar.js"></script> -->
+  <script type="text/javascript" src="js/logIn.js"></script>
+</head>
+
+<body>
+  <div id="wrapper mainPage">
+    <button type="button" class="menu-btn navbar-toggle" onclick="toggleMenu();">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+    <header>
+      <nav id="mainNav" class="closed" role='navigation'>
+        <ul>
+          <li><a href="homePage.html"><i class="#"></i> Home</a></li>
+          <li><a href="ourStory.html"><i class="#"></i> Our Story</a></li>
+          <li><a href="menuList.html"> Menu List</a>
+            <ul class="sub-menu">
+              <li><a href="menuList.html"> Salad</a>
+                <ul class="sub-sub-menu">
+                  <li><a href="menuList.html">Ceasar</a></li>
+                  <li><a href="menuList.html">Garden</a></li>
+                </ul>
+              </li>
+              <li><a href="menuList.html"><i class="icon-pencil"></i> Apetizer</a>
+                <ul class="sub-sub-menu">
+                  <li><a href="menuList.html">Guacamole</a></li>
+                  <li><a href="menuList.html">Spinach Brownies</a></li>
+                  <li><a href="menuList.html">Bruschetta</a></li>
+                </ul>
+              </li>
+              <li><a href="menuList.html"><i class="icon-camera"></i> Desserts</a>
+                <ul class="sub-sub-menu">
+                  <li><a href="menuList.html">Gelato</a></li>
+                  <li><a href="menuList.html">7 Layered Cake</a></li>
+                  <li><a href="menuList.html">Icecream</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="reservation.html"><i class="#"></i> Reservation</a>
+            <ul class="sub-menu">
+              <li><a href="reservation.html"><i class="#"></i> Patio</a></li>
+              <li><a href="reservation.html"><i class="#"></i> Indoor</a></li>
+            </ul>
+          </li>
+          <li><a href="logIn.html"><i class="#"></i> Log In</a></li>
+        </ul>
+        <a id="close" onclick="toggleMenu();">X</a>
+      </nav>
+      <section class="navbar navbar-inverse navbar-fixed-top headId myNav navbar-header">
+        <a href="homePage.html"><img src="images/final_draft_logo_transparent.png" alt="logo" class="logoImg"></a>
+      </section>
+      <nav id="desktop" class="navbar navbar-inverse navbar-fixed-top headId myNav">
+        <section class="container-fluid">
+          <section class="navbar-header">
+            <a href="#"><img src="images/final_draft_logo_transparent.png" alt="logo" class="logoImg"></a>
+          </section>
+          <ul class="nav navbar-nav navList" id="navList">
+            <li><a href="homePage.html">Home</a></li>
+            <li><a href="ourStory.html">Our Story</a></li>
+            <li><a href="menuList.html">Menu List<img src="images/arrowD.png" alt="arrow" class="arrow"></a>
+              <ul class="menuItem">
+                <li><a href="menuList.html">Salad<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+                  <ul class="subMenuItem">
+                    <li><a href="menuList.html">Caesar</a></li>
+                    <li><a href="menuList.html">Garden</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menuItem">
+                <li><a href="menuList.html">Apetizer<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+                  <ul class="subMenuItem">
+                    <li><a href="menuList.html">Guacamole</a></li>
+                    <li><a href="menuList.html">Spinach Brownies</a></li>
+                    <li><a href="menuList.html">Bruschetta</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="menuItem">
+                <li><a href="menuList.html">Desserts<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+                  <ul class="subMenuItem">
+                    <li><a href="menuList.html">Gelato</a></li>
+                    <li><a href="menuList.html">7 Layered Cake</a></li>
+                    <li><a href="menuList.html">Icecream</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="reservation.html">Reservation<img src="images/arrowD.png" alt="arrow" class="arrow"></a>
+              <ul class="subMenuReserve">
+                <li><a href="reservation.html">Patio</a>
+                </li>
+                <li><a href="reservation.html">Indoor</a>
+                </li>
+              </ul>
+            </li>
+            <li><a class="current" href="logIn.html">Log In</a></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+    <section id="backgroundImage" class="fluid-ratio-resize">
+      <div class="container">
+        <div id="second">
+        <form method="post" action="http://webdevbasics.net/scripts.demo.php" onsubmit="return login();" id="myForm">
+          <section class="modalLogIn" id="layer1">
+            <section class="modalLogInBodyR">
+              <section class="row">
+                <section class="col-xs224">
+                  <section class="center block panelF">
+                    <section class="form-group">
+                      <label for="fname" class="control-label logInLabel">Full Name</label>
+                      <input type="text" id="name" class="form-control fname" title="Enter your full Name" placeholder="Full Name" required />
+                      <span class="help-block"></span>
+                    </section>
+                    <section class="form-group">
+                      <label for="username" class="control-label logInLabel">Email ID</label>
+                      <input type="text" id="registeremail" class="form-control Username" title="Enter your Email" placeholder="name@gmail.com" required/>
+                      <span id="emailMsg"></span> 
+                      <span class="help-block"></span>
+                    </section>
+                    <section class="form-group">
+                      <label for="password" class="control-label logInLabel">Password</label>
+                      <input type="password" id="registerpassword" class="form-control password" name="password" title="Password" required/>
+                      <span class="help-block"></span>
+                    </section>
+                    <!-- <section class="form-group">
+                      <label for="password" class="control-label logInLabel">Confirm Password</label>
+                      <input type="text" class="form-control password" name="password" title="Password" />
+                      <span class="help-block"></span>
+                    </section><br> -->
+                    <section>
+                      <button type="submit" class="btn btn-success btn-block" id="account" >Log In</button><br><br>
+                      <p class="lead">Already logged in? Want to reserve seat?<br> <a href="reservation.html" id="signin">Click here: Reserve</a></p>
+                    </section>
+                  </section>
+                </section>
+              </section>
+            </section>  
+          </section>
+          </form>        
+        </div>
+      </div>
+    </section>        
+  </div>
+  <footer>
+    <ul class="social" style="margin-bottom: 0;">
+      <li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="icons"/><i class="fa fa-facebook" id="facebook"></i></a></li>
+      <li><a href="https://plus.google.com" target="_blank"><img src="images/gPlus.png" class="iconsGPlus"/><i class="fa fa-google-plus" id="google-plus"></i></a></li>
+      <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" id="twitter"><img src="images/twitter.png" class="iconsTwitter"/></i></a></li>
+    </ul>
+    <h6>@bonapetit 2017</h6>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,217 @@
+.btn-block
+{
+  width: 120px;
+}
+
+body
+{
+  max-height: 700px;
+}
+.imageReservation
+{
+  background-image: url("../images/restaurant.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 26em;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 39px;
+
+}
+
+.captionImg
+{
+  display: inline-block;
+  color: brown;
+  font-size: x-large;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(0,0,0,0.89);
+  width: 100%;
+  float: right;
+}
+
+.columns3
+{
+  margin-right: auto;
+  margin-left: auto;
+  /*display: inline-block;*/
+}
+
+.sectLeft
+{
+  margin-top: 15px;
+  border: 1px solid black;
+  width: 33%;
+  height: 21em;
+  float: left;
+  background-color: rgba(130, 75, 22, 0.57);
+}
+
+.videoRight
+{
+  width: 100%;
+  height: 18em;
+}
+
+.sectRight
+{
+  color: brown;
+  /*font-size: large;*/
+  font-weight: bold;
+  background-color: rgba(234, 215, 15, 0.4);
+}
+
+#headingR
+{
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+#headingMid
+{
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
+  color:brown;
+}
+
+
+.myLabelR
+{
+  font-size: x-large;
+  color: brown;
+  text-align: center;
+ /* margin-left: 93px;*/
+}
+
+.myLabelRBtn
+{
+  font-size: x-large;
+  text-align: center;
+  color:black;
+  /*margin-left: 100px;*/
+  margin-top: 2px;
+}
+
+input[type=radio]
+{
+  margin:18px 17px 0 0;
+  
+}
+
+.radio-inline input[type=radio]
+{
+  position: inherit;
+}
+
+.radio-inline+.radio-inline{
+  /*margin-left: 27px;*/
+  position: inherit;
+}
+
+.reserveBtn
+{
+  margin-top: 26px;
+  /*margin-left: 168px;*/
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.sectMid
+{
+  margin-top: 15px;
+  border: 1px solid black;
+  width: 33%;
+  height: 21em;
+  float: left;
+  background-color: rgba(228, 65, 7, 0.28);
+}
+
+.imgsectMid
+{
+  width: 100%;
+  height: 12em ;
+  background-image: url("../images/reserved.jpg");
+  background-size: contain;
+}
+
+img
+{
+  /*height: auto;*/
+}
+.imgBtn
+{
+  margin-top: 178px;
+    /* float: left; */
+    width: 124px;
+    color: black;
+    border-radius: 4px;
+    height: 30px;
+    font-size: large;
+}
+
+.sectRight
+{
+  margin-top: 15px;
+  border: 1px solid black;
+  width: 34%;
+  height: 21em;
+  float: right;
+}
+
+.panelF
+{/*display:none;*/
+  max-width: 40em;
+  height: 45em;
+  margin: 0 auto;
+  margin-top: 5em;
+  padding-top: 2em;
+  padding-left: 1em;
+  border-radius: 1em;
+  background-color: rgba(0,0,0,0.5); 
+  color: white;
+  font-weight: bold; 
+}
+
+.form-group
+{
+  margin-bottom: 35px;
+}
+
+/*---------------------------------modal-------------------*/
+
+.fullName
+{
+  width: 250px;
+}
+
+.modal-header
+{
+  background-color: rgba(0,0,0,0.2);
+}
+
+.reserveBttn
+{
+  margin-left: 250px;
+}
+
+.myLabel
+{
+  margin-left: 100px;
+}
+
+.myinput-group
+{
+  /*display: block!important;*/
+  width: 150px;
+  margin-left: 80px;
+}
+
+.myBtn
+{
+ width: 200px; 
+}

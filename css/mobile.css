@@ -1,0 +1,502 @@
+@media screen and (max-width: 40.625em) {
+	.sectionOne {
+		width: 100%;
+		background-image: url("");
+		display: none;
+	}
+	.sectionThree {
+		background-image: url("../images/icecream.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 45em;
+		width: 100%;
+		display: none;
+	}
+	.sectImg {
+		background-image: url("../images/desert.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 28em;
+		width: 40em;
+		float: right;
+		display: none;
+	}
+	.sectImgFood {
+		background-image: url("../images/fruits.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 24em;
+		width: 40em;
+		float: right;
+	}
+	.sectImgLast {
+		background-image: url("../images/Sweet-Potato-Casserole-Bites.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 28em;
+		width: 45em;
+		float: right;
+		display: none;
+	}
+	.sectText {
+		height: 28em;
+		display: flex;
+		margin-top: 50px;
+	}
+	.sectText p {
+		font-size: x-large;
+		font-family: serif;
+		font-style: italic;
+		font-weight: 600;
+		color: darkblue;
+		width: 24em;
+	}
+	.menu-btn {
+		position: fixed;
+		top: 0;
+		right: 0;
+	}
+	.sectTextMid {
+		display: flex;
+	}
+	.sectTextMid-inner {
+		background-image: url("../images/seatingC.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		/*height: 25em;
+		width: 73%;*/
+		height: 18em;
+		width: 89%;
+	}
+	.sectTextMid p {
+		font-size: x-large;
+		font-family: serif;
+		font-style: italic;
+		font-weight: 600;
+		color: brown;
+		/*width: 12em;*/
+		width: 15em;
+		padding-left: 20px;
+	}
+	.sectImgMid {
+		background-image: url("");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 28em;
+		width: 45%;
+		display: none;
+	}
+	/*---------Reservation-----------------------*/
+	.sectLeft {
+		margin-top: 0;
+		border: 1px solid black;
+		width: 100%;
+		height: 15em;
+	}
+	.sectMid {
+		margin-top: 0;
+		border: 1px solid black;
+		width: 100%;
+		height: 15em;
+	}
+	.sectRight {
+		margin-bottom: 46px;
+		border: 1px solid black;
+		width: 100%;
+		height: 15em;
+	}
+	.reserveBtn {
+		margin-top: 10px;
+		margin-left: 100px;
+	}
+	.clear {
+		clear: both;
+	}
+	#headingR {
+		border-bottom: 1px solid black;
+		width: 100%;
+		text-align: center;
+		font-size: medium;
+		font-weight: bold;
+	}
+	.myLabelR {
+		font-size: medium;
+		color: brown;
+		text-align: center;
+	}
+	.myLabelRBtn {
+		font-size: x-large;
+		text-align: center;
+		color: black;
+		/*margin-left: 70px;
+  margin-top: -10px;*/
+	}
+	.reserveBtn {
+		margin-top: 18px;
+		margin-left: 154px;
+	}
+	.imgsectMid {
+		width: 100%;
+		height: 9em;
+	}
+	.imgBtn {
+		margin-top: 112px;
+	}
+	.videoRight {
+		width: 100%;
+		height: 12em;
+	}
+}
+
+
+
+
+/*-------------------home----------------------------*/
+@media screen and (max-width: 49.875em) and (min-width: 40.625em) {
+	.sectText p {
+		width: 32em;
+	}
+
+	.sectionThree {
+		background-image: url(../images/ourStory.png);
+	}
+
+	.menu-btn
+	{
+		z-index: 1031;
+    position: fixed;
+    top: 0;
+    right: 0;
+	}
+
+}
+
+/*-------------------------------------parallax-----------------*/
+
+/*---------------600px -300px---------------------------*/
+@media screen and (max-width: 30.5em) and (min-width: 9.75em)
+{
+	.parallax
+	{
+		display: none;
+	}
+
+	.menu-content
+	{	
+		width:100%;
+
+	}
+
+	.sectTextMid
+	{
+		padding-top: 11em;
+	}	
+
+	.navbar-toggle
+	{
+		margin-right: 81px;
+	}
+}
+
+/*---------------1377px--login-------------------------*/
+@media screen and (min-width: 86.0625em)
+{
+	#backgroundImage
+	{
+		background-position: none;
+		background-image: url("../images/steak-dinner1200.jpg");
+	}
+}
+
+
+/*---------------600px---------------------------*/
+@media screen and (max-width: 37.5em)
+{
+	#backgroundImage
+	{
+		background-position: none;
+		background-image: url("../images/steak-dinner600.jpg");
+	}
+}
+
+/*---------------600px -300px---------------------------*/
+@media screen and (max-width: 37.5em) and (min-width: 18.75em)
+{
+	#backgroundImage
+	{
+		background-position: none;
+		background-image: url("../images/steak-dinner300.jpg");
+	}
+
+
+}
+
+/*-------------------250---------------------------------------------*/
+@media screen and (max-width: 15.625em)
+{
+	#backgroundImage
+	{
+		background-position: none;
+		background-image: url("../images/steak-dinner250.jpg");
+	}
+}
+
+/*--------------------------------320pxOurStory---------*/
+@media screen and (max-width: 20em)  and (min-width: 7.5em)
+{
+	.about-content
+{
+	font-size: medium;
+	float: right;
+	margin-top:  1.125em;
+	/*padding-right: 1em;*/
+	text-align: center;
+}
+
+.textOurStory {
+    margin-top: 1.125em;
+
+	
+}
+
+.imgOurStory
+{
+	width: 100%;
+	height: 200px !important;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 310px;
+}
+
+
+.imgOurStoryR
+{
+	width: 100%;
+	height: 200px !important;
+	max-width: 310px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.imgOurStoryRt
+{
+	width: 100%;
+	height: 200px !important;
+	max-width: 310px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+}
+
+/*----------------------------820 to 321------------------------*/
+@media screen and (max-width: 51.25em) and (min-width: 20.0625em)
+{
+	.about-content
+{
+	font-size: medium;
+	float: right;
+	margin-top:  0.125em;
+	/*padding-right: 1.45em;*/
+	text-align: center;
+	width: 74%;
+}
+
+.textOurStory {
+    margin-top: 1.125em;
+
+	
+}
+
+.imgOurStory
+{
+	width: 50%;
+	height: 200px !important;
+	margin-right: auto;
+	margin-left: auto;
+	float: right;
+	max-width: 310px;
+}
+
+
+.imgOurStoryR
+{
+	width: 50%;
+	height: 200px !important;
+	float: right;
+	max-width: 310px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.imgOurStoryRt
+{
+	width: 50%;
+	height: 200px !important;
+	float: right;
+	max-width: 310px;
+	margin-right: auto;
+	margin-left: auto;
+}
+}
+
+
+/*------------820(51.25),635 to 1282---------------------------*/
+
+@media screen  and (min-width: 39.6875em) and (max-width: 80.125em)
+{
+	.about-content
+{
+	font-size: medium;
+	float: right;
+	margin-top:  -5.875em;
+	width: 50%;
+	text-align: center;
+	padding-right: 0;
+}
+
+.textOurStory {
+    margin-top: -27.875em;
+
+	
+}
+
+.imgOurStory
+{
+	width: 25%;
+	height: 200px !important;
+	margin-right: auto;
+	margin-left: auto;
+	float: right;
+	max-width: 310px;
+}
+
+
+.imgOurStoryR
+{
+	width: 25%;
+	height: 200px !important;
+	float: right;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 310px;
+}
+
+.imgOurStoryRt
+{
+	width: 25%;
+	height: 200px !important;
+	float: right;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 310px;
+}
+}
+/*---------------------->1282----------------------------*/
+@media screen and (min-width: 80.125em)
+{
+	.about-content
+{
+	font-size: large;
+	float: right;
+	margin-top:  -5.875em;
+	width: 40%;
+	text-align: center;
+	padding-right: 2em;
+
+}
+.imgOurStory
+{
+	width: 30%;
+	height: 200px !important;
+	margin-right: auto;
+	margin-left: auto;
+	float: right;
+	max-width: 310px;
+}
+
+
+.imgOurStoryR
+{
+	width: 30%;
+	height: 200px !important;
+	float: right;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 310px;
+}
+
+.imgOurStoryRt
+{
+	width: 30%;
+	height: 200px !important;
+	float: right;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 310px;
+}
+}
+
+/*--------------------------------------------635Work hrs------------------------*/
+@media screen  and (min-width: 7.5em) and (max-width: 40em)
+{
+	.rightSectWork
+ {
+ 	border: 1px solid brown;
+	width: 100%;
+	height: 18em;
+	/*float: right;*/
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(0,0,0,0.2);
+ }
+
+ .workHr
+{
+	border: 1px solid brown;
+	width: 100%;
+	height: 18em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:  1em;
+	/*margin-top:  30em;*/
+	background-color: rgba(0,0,0,0.2);
+}
+
+}
+
+/*--------------------------------375px and 629px----------------------------------------------*/
+@media screen  and (min-width: 375px) and (max-width: 629px)
+{
+	.workHr
+	{
+		margin-top:  1em;
+	}
+}	
+
+/*------------------------------------------------------------------------------------------------*/
+
+@media screen  and (min-width: 300px) and (max-width: 375px)
+{
+	.workHr
+	{
+		margin-top:  1em;
+	}
+}	
+
+/*-----------------------970and above menulist----------------------------------------*/
+/*@media screen  and (min-width: 970px) and (max-width: 1600px)
+{
+	#div2 {
+    margin-left: 71%;
+	}
+
+	#div1 {
+    margin-left: 69%;
+	}
+
+	#div3 {
+    margin-left: 69%;
+	}
+}*/

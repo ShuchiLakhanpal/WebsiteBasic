@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>WebsiteHTML5</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon-32x32.png" type="image/x-icon" width="1em" height="1em">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/reservation.css" rel="stylesheet" />
+	<link href="css/navbar.css" rel="stylesheet" />
+	<link href="css/mobile.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/navbar.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<script type="text/javascript" src="js/localStorage.js"></script>
+
+</head>
+
+<body>
+	<div id="wrapper mainPage">
+		<button type="button" class="menu-btn navbar-toggle" onclick="toggleMenu();">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<header>
+			<nav id="mainNav" class="closed" role='navigation'>
+				<ul>
+					<li><a href="homePage.html"><i class="#"></i> Home</a></li>
+					<li><a href="ourStory.html"><i class="#"></i> Our Story</a></li>
+					<li><a href="menuList.html"> Menu List</a>
+						<ul class="sub-menu">
+							<li><a href="menuList.html"> Salad</a>
+								<ul class="sub-sub-menu">
+									<li><a href="menuList.html">Ceasar</a></li>
+									<li><a href="menuList.html">Garden</a></li>
+								</ul>
+							</li>
+							<li><a href="menuList.html"><i class="icon-pencil"></i> Apetizer</a>
+								<ul class="sub-sub-menu">
+									<li><a href="menuList.html">Guacamole</a></li>
+									<li><a href="menuList.html">Spinach Brownies</a></li>
+									<li><a href="menuList.html">Bruschetta</a></li>
+								</ul>
+							</li>
+							<li><a href="menuList.html"><i class="icon-camera"></i> Desserts</a>
+								<ul class="sub-sub-menu">
+									<li><a href="menuList.html">Gelato</a></li>
+									<li><a href="menuList.html">7 Layered Cake</a></li>
+									<li><a href="menuList.html">Icecream</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="reservation.html"><i class="#"></i> Reservation</a>
+						<ul class="sub-menu">
+							<li><a href="reservation.html"><i class="#"></i> Patio</a></li>
+							<li><a href="reservation.html"><i class="#"></i> Indoor</a></li>
+						</ul>
+					</li>
+					<li><a href="logIn.html"><i class="#"></i> Log In</a></li>
+				</ul>
+				<a id="close" onclick="toggleMenu();">X</a>
+			</nav>
+			<section class="navbar navbar-inverse navbar-fixed-top headId myNav navbar-header">
+				<a href="homePage.html"><img src="images/final_draft_logo_transparent.png" alt="logo" class="logoImg"></a>
+			</section>
+
+			<nav id="desktop" class="navbar navbar-inverse navbar-fixed-top headId myNav">
+				<section class="container-fluid">
+					<section class="navbar-header">
+						<a href="#"><img src="images/final_draft_logo_transparent.png" alt="logo" class="logoImg"></a>
+					</section>
+					<ul class="nav navbar-nav navList" id="navList">
+						<li><a href="homePage.html">Home</a></li>
+						<li><a href="ourStory.html">Our Story</a></li>
+						<li><a href="menuList.html">Menu List<img src="images/arrowD.png" alt="arrow" class="arrow"></a>
+							<ul class="menuItem">
+								<li><a href="menuList.html">Salad<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+									<ul class="subMenuItem">
+										<li><a href="menuList.html">Caesar</a></li>
+										<li><a href="menuList.html">Garden</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="menuItem">
+								<li><a href="menuList.html">Apetizer<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+									<ul class="subMenuItem">
+										<li><a href="menuList.html">Guacamole</a></li>
+										<li><a href="menuList.html">Spinach Brownies</a></li>
+										<li><a href="menuList.html">Bruschetta</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="menuItem">
+								<li><a href="menuList.html">Desserts<img src="images/arrowR.png" alt="arrow" class="arrowR"></a>
+									<ul class="subMenuItem">
+										<li><a href="menuList.html">Gelato</a></li>
+										<li><a href="menuList.html">7 Layered Cake</a></li>
+										<li><a href="menuList.html">Icecream</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a class="current" href="reservation.html">Reservation<img src="images/arrowD.png" alt="arrow" class="arrow"></a>
+							<ul class="subMenuReserve">
+								<li><a href="reservation.html">Patio</a>
+								</li>
+								<li><a href="reservation.html">Indoor</a>
+								</li>
+							</ul>
+						</li>
+						<li><a href="logIn.html">Log In</a></li>
+					</ul>
+				</section>
+			</nav>
+		</header>
+		<section >
+			<figure>
+				<img src="images/restaurant.jpg" alt="reservation" class="imageReservation fluid-ratio-resize">
+				<figcaption class="captionImg" >Reserve your table</figcaption>
+			</figure><br><br>
+			<section class="columns3">
+				<section class="sectLeft">
+					<h2 id="headingR">Book Here</h2>
+					<label for="selction" class="control-label radioTxt myLabelR">Select for reservation:</label><br>
+                    <label class="radio-inline control-label radioClass myLabelRBtn"><input type="radio" name="optradio">Patio</label>
+                    <label class="radio-inline control-label radioClass myLabelRBtn"><input type="radio" name="optradio" checked>Indoor</label>
+                    <button type="submit" class="btn btn-success btn-block reserve reserveBtn outline launch-modal" data-modal-id="modal-register" >Reserve your table</button>
+                    <!-- <button class="btn btn-success btn-block reserve reserveBtn outline launch-modal" data-modal-id="modal-register1"  onclick="clearMsg();">Close Alert</button> -->
+				</section>
+				<div class="clear"></div>
+				<section class="sectMid">
+					<h2 id="headingMid">Lorem Ipsum</h2>
+					<section class="imgsectMid">
+					<button type="submit" class="imgBtn" id="submitBtn" ><a href="homePage.html">Learn more</a>
+					</button>
+					</section>
+				</section>
+				<div class="clear"></div>
+				<section class="sectRight">
+				<video class="videoRight" controls poster="images/foodPlatting1.jpg">
+					<!-- <source src="video.mp4" type="video/mp4"> --> <!--allows to specify different video files in different format from which browser can select and browser selects the first file-->
+					<source src="restaurant.mp4" type="video/mp4"> 
+					Your browser does not support HTML5 video.
+				</video>
+				<p>Video Courtesy of &nbsp; <a href="https://www.youtube.com/watch?v=HQlg5gHPDNI" target="_blank">Youtube</a>
+				</p>	
+				</section>
+			</section>
+			<section id="displayMsg" >
+			<script type="text/javascript">
+				displayMsg();
+				// alert(Reservation successful!);
+			</script>
+			</section> 		  	    
+<section class="modal fade" id="modal-register" tabindex="-1" role="dialog" aria-labelledby="modal-register-label" aria-hidden="true"> 
+     <section class="modal-dialog">
+         <section class="modal-content">
+             <section class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">
+                     <span aria-hidden="true">&times;</span><span class="sr-only"></span> 
+                 </button>
+                 <h3 class="modal-title" id="modal-register-labelP">Reserve your table</h3>
+             </section> 
+             <form method="post" action="" id="myForm" onsubmit="return login();">
+             <section class="modal-body">                
+                        <section class="input-group input-group-lg labelTxt">
+	                        <label for="fullName" class="control-label fname labelTxt myLabel">Full Name</label>
+	                        <input type="text" id="fullName" class="form-control fullName myinput-group" name="fullName" title="fullName" placeholder="Name" required />
+							<span class="help-block"></span>
+                        </section>
+                        <section class="input-group input-group-lg labelTxt" >
+	                        <label for="email" class="control-label myLabel ">Email ID</label>
+	                        <input type="text" id="loginemail" class="form-control email myinput-group" title="Enter your Email" name="email" placeholder="name@gmail.com" required/>
+			                <span class="help-block"></span>
+                    </section>
+                     <br />
+                    <section class="input-group input-group-lg labelTxt" >
+                        <label for="date" class="control-label myLabel ">Enter Date</label>
+                        <input type="text" class="form-control myinput-group" id="dateReserve"  title="Enter date for reservation" name="date" placeholder="yyyy-mm-dd" aria-describedby="basic-addon1" />
+		                <span class="help-block"></span>
+                    </section>
+                    <br />           
+                    <section class="dropdown">
+                        <label class="myLabel">Select Number of Seats</label><br />
+                             <select class="btn btn-primary dropdown-toggle myBtn myinput-group"  name="btnDropDown" data-toggle="dropdown">
+                             	 <option value="top">Select Number of Seats </option>                 
+                                  <option value="no1">2</option>
+                                  <option value="no2">4</option>
+                                   <option value="no3">6</option>
+                                   <option value="no4">10</option>
+                                   <option value="no5">12</option>
+                              </select>      
+                     </section><br>
+                                
+                                <button type="submit" class="btn btn-success btn-block center-block reserveBttn">Book</button>
+                             </section> 
+                        </form>                                                                                                            
+                 </section>  
+            </section>         
+        </section>
+ </section>  
+</section>		
+</div>
+	<footer>
+		<ul class="social" style="margin-bottom: 0;">
+			<li><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" class="icons"/><i class="fa fa-facebook" id="facebook"></i></a></li>
+			<li><a href="https://plus.google.com" target="_blank"><img src="images/gPlus.png" class="iconsGPlus"/><i class="fa fa-google-plus" id="google-plus"></i></a></li>
+			<li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter" id="twitter"><img src="images/twitter.png" class="iconsTwitter"/></i></a></li>
+		</ul>
+		<h6>@bonapetit 2017</h6>
+	</footer>
+</body>
+</html>
